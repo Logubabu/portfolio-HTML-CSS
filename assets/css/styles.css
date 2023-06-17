@@ -350,28 +350,26 @@ img {
   width: 85%;
 }
 
-/* WORK */
+/* EXPERIENCE */
 
-.work {
+.experience {
   text-align: center;
 }
 
-.work_container {
+.experience_container {
   row-gap: 2rem;
 }
 
-.work_img {
+.experience_content {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
-}
-
-.work_img img {
-  transition: 1s;
+  transition: 2;
   cursor: pointer;
+  z-index: var(--z-back);
 }
 
-.work_img img:hover {
+.experience_content:hover {
   transform: scale(1.1);
 }
 
@@ -500,7 +498,7 @@ img {
     width: 450px;
   }
 
-  .work_container {
+  .experience_container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
